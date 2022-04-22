@@ -16,6 +16,3 @@ print(10, type(10))  # Int
 print(25.23, type(25.23))  # Float
 
 print('l' == 'L', type('l' == 'L'))  # Bool
-
-
-
