@@ -71,5 +71,5 @@ print(len(lista9)) # resultado '4' mostrando o valor de objetos na lista 9
 
 # há a possibildade de se concatenar e multiplicar listas
 lista10 = ['1','2','3']
-print(lista10*3)
-print(lista10+lista)
+print(lista10*3) # ['1', '2', '3', '1', '2', '3', '1', '2', '3']
+print(lista10+lista) # ['1', '2', '3', 123, 'Otávio', '5.23', 'mundo']
