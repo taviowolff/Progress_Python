@@ -1,5 +1,5 @@
 # Progress_Python
-In this repository, I will be posting about my progress in Python, along with small creations of mine.
+In this repository, I will be posting about my progress in Python, along with small creations.
 Anyone who is starting and wants to guide themselves here is welcome.
 
 
