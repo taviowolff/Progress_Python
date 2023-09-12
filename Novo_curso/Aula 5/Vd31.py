@@ -9,3 +9,4 @@ imc = peso / (altura ** 2)
 print(nome,'Seu IMC é', imc)\
 
 print(f'{nome}, "Seu IMC é", {imc:.2f}')
+print(f'sua altura é {altura:,.2f}')
