@@ -22,11 +22,10 @@
 # Além desses operadores, você pode combinar expressões de comparação usando operadores lógicos, como and (e), or (ou) e not (não), 
 # para criar condições mais complexas. Por exemplo:
 
-
 a = int(input('Escolha um número: '))
 b = int(input('Escolha outro número: '))
 
 if a > 5 and b < 10:
     print('True')
-    
+
     # Esta condição é verdadeira se 'a' for maior que 5 e 'b' for menor que 10.
