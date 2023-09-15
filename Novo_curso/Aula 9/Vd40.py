@@ -10,8 +10,8 @@
 
 # Nessas linhas de baixo o and verifica o se os dois valores são True
 # Como um deles não é, retorna False
-# retorno1 = True
-# retorno2 = False
-# resultado_and = retorno1 and retorno2
-# print(resultado_and)
+retorno1 = True
+retorno2 = False
+resultado_and = retorno1 and retorno2
+print(resultado_and)
 
