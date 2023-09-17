@@ -31,6 +31,7 @@ valor_hexadecimal = hex(valor_decimal)
 
 print(f'O valor hexadecimal de "{caractere}" é: {valor_hexadecimal}')
 
+
 # Maneira para descobrir um valor Hexadecimal de uma frase
 frase = "Olá, Mundo!"  # Substitua pela frase que você deseja converter
 
