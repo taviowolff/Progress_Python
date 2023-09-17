@@ -3,14 +3,18 @@ Formatação básica de strings
 s - string
 d - int
 f - float
+
 .<n'mero de dígitos>f
 x ou X Hexadeciaml
+
 (Caractere)(><^)(quantidade)
 > - Esquerda
 < - Direita
 ^ - Centro
+
 Sinal - + ou -
 Ex.: 0>-100,.1f
+
 Conversion flags - !r !s !a
 '''
 
