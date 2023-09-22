@@ -1,7 +1,7 @@
 """
-CONSTANTE = "Variáveis" que não vão mudar
+CONSTANTE = "Variáveis" que não vão mudar # constante são vairáveis que são atribuidas a um nome escrito totalmente em maiúsculo
 Muitas condições no mesmo if (ruim)
-    <- Contagem de complexidade (ruim)
+    <- Contagem de complexidade (ruim) # quanto mais complexo um if, mais difícil é sua interpretação.
 """
 velocidade = 61  # velocidade atual do carro
 local_carro = 100  # local em que o carro está na estrada
