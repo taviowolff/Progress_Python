@@ -1,8 +1,8 @@
 while True:
    
-    sair = input('você deseja sair (s/n)? ')
+    entrar = input('Quer calcular? (s/n) ')
 
-    while sair == 'n':
+    while entrar != 'n':
 
         x = input('escolha um tipo de cálculo +; -; /; *: ')
         
@@ -35,8 +35,8 @@ while True:
             else:
                 ('escolheu o sinal errado')
 
-        else:
-            print('você escreveu letras') 
-            continue
-
-    sair = input('você deseja sair (s/n)? ')
+        entrar = input('Quer calcular? (s/n) ')
+       
+    else:
+        print('Tchau até mais') 
+        break
