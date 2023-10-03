@@ -26,11 +26,11 @@ nova_str = ''
 
 x = 0
 
-while x <= len(nome):
+while x < len(nome):
 
     letras = nome[x]
 
-    nova_str += letras
+    nova_str += (f'-{letras}')
 
     x += 1
 
