@@ -60,6 +60,7 @@ while True:
         try:
             num1 = float(num1)
             num2 = float(num2)
+      
         except ValueError:
             print('Você não digitou um número válido.')
             continue
@@ -67,20 +68,23 @@ while True:
         if x == '+':
             soma = num1 + num2
             print(f'{num1} + {num2} = {soma}' )
+       
         elif x == '-':
             sub = num1 - num2
             print(f'{num1} - {num2} = {sub}')
+
         elif x == '/':
             if num2 == 0:
                 print('Divisão por zero não é permitida.')
             else:
                 div = num1 / num2
                 print(f'{num1} / {num2} = {div}')
+
         elif x == '*':
             mult = num1 * num2
             print(f'{num1} * {num2} = {mult}')
 
-        sair = input('Você deseja continuar (s/n)?: ')
+        entrar = input('Você deseja continuar? (s/n): ')
 
     else:
         print('Tchau, até mais.')
