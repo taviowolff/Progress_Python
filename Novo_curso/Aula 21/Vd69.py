@@ -12,4 +12,5 @@ while i < len(string):
     i += 1
 else:
     print('Não encontrei um espaço na string.')
+print('Encontrei um espaço')
 print('Fora do while.')
