@@ -2,7 +2,7 @@
 Faça um contador de letras 
 Que ao final mostre a letra que mais se repetiu
 """
-
+# # Contador que eu criei com base no meu conhecimento fraco sobre o laço while
 # frase = 'Pato angolano'
 
 # i = 0 
@@ -22,30 +22,63 @@ Que ao final mostre a letra que mais se repetiu
 #     i += 1
 
 
-frase = input("Digite uma frase: ")
-frase = frase.replace(" ", "").lower()
+# # Usando python para fazer esse contador de letras 
 
-contagem_letras = {}
-indice = 0
+# frase = input("Digite uma frase: ")
+# frase = frase.replace(" ", "").lower()
 
-while indice < len(frase):
-    letra = frase[indice]
-    if letra.isalpha():
-        if letra in contagem_letras:
-            contagem_letras[letra] += 1
-        else:
-            contagem_letras[letra] = 1
-    indice += 1
+# contagem_letras = {}
+# indice = 0
 
-letra_mais_repetida = None
-max_contagem = 0
+# while indice < len(frase):
+#     letra = frase[indice]
+#     if letra.isalpha():
+#         if letra in contagem_letras:
+#             contagem_letras[letra] += 1
+#         else:
+#             contagem_letras[letra] = 1
+#     indice += 1
 
-for letra, contagem in contagem_letras.items():
-    if contagem > max_contagem:
-        letra_mais_repetida = letra
-        max_contagem = contagem
+# letra_mais_repetida = None
+# max_contagem = 0
 
-if letra_mais_repetida is not None:
-    print(f"A letra que mais se repete na frase é: {letra_mais_repetida}")
-else:
-    print("Não há letras na frase.")
+# for letra, contagem in contagem_letras.items():
+#     if contagem > max_contagem:
+#         letra_mais_repetida = letra
+#         max_contagem = contagem
+
+# if letra_mais_repetida is not None:
+#     print(f"A letra que mais se repete na frase é: {letra_mais_repetida}")
+# else:
+#     print("Não há letras na frase.")
+
+
+# Aplicação do professor Luis Otávio sobre esse 
+
+frase = 'Eu odeio flor'
+
+i = 0
+qtd_apareceu_mais_vezes = 0
+letra_apareceu_mais_vezes = ''
+
+while i < len(frase):
+    letra_atual = frase[i]
+
+    if letra_atual == ' ':
+        i += 1
+        continue
+
+    qtd_atual = frase.count(letra_atual)
+
+    if qtd_apareceu_mais_vezes <= qtd_atual:
+        qtd_apareceu_mais_vezes = qtd_atual
+        letra_apareceu_mais_vezes = letra_atual
+    
+    print(letra_atual)
+    i += 1
+print('')
+print(
+    'A letra que apareceu mais vezes foi '
+    f'"{letra_apareceu_mais_vezes}" que apareceu '
+    f'{qtd_apareceu_mais_vezes}x'
+)
