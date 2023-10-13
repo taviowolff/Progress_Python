@@ -64,9 +64,9 @@ letra_apareceu_mais_vezes = ''
 while i < len(frase):
     letra_atual = frase[i]
 
-    if letra_atual == ' ':
+    if letra_atual == ' ': # esse if aqui vai fazer com que os espaços da frase não sejam contados 
         i += 1
-        continue
+        continue # aplicando a linha de código que faz com que continue após notar o espaço além de voltar para o início do laço 
 
     qtd_atual = frase.count(letra_atual)
 
