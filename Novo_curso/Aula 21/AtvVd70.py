@@ -68,7 +68,7 @@ while i < len(frase):
         i += 1
         continue # aplicando a linha de código que faz com que continue após notar o espaço além de voltar para o início do laço 
 
-    qtd_atual = frase.count(letra_atual)
+    qtd_atual = frase.count(letra_atual) # count vai contar cada caractere que definimos que vai ser na letra atual
 
     if qtd_apareceu_mais_vezes <= qtd_atual:
         qtd_apareceu_mais_vezes = qtd_atual
