@@ -20,7 +20,7 @@ que trabalhe com um conjunto específico de valores.
 #     print(letras)
 
 
-numeros = range(0,21,2)
+numeros = range(0,21,2) # nesse exemplo eu demonstro que o numero 20 não seria incluido ao colocar o numero 21 
 
 for numero in numeros:
     print(numero)
