@@ -55,7 +55,7 @@ Que ao final mostre a letra que mais se repetiu
 
 # Aplicação do professor Luis Otávio sobre esse 
 
-frase = 'Eu odeio flor'
+frase = 'Eu amo flor'
 
 i = 0
 qtd_apareceu_mais_vezes = 0
