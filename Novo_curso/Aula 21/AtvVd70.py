@@ -22,7 +22,7 @@ Que ao final mostre a letra que mais se repetiu
 #     i += 1
 
 
-# # Usando python para fazer esse contador de letras 
+# # Usando chatgpt para fazer esse contador de letras 
 
 # frase = input("Digite uma frase: ")
 # frase = frase.replace(" ", "").lower()
@@ -74,7 +74,7 @@ while i < len(frase):
         qtd_apareceu_mais_vezes = qtd_atual
         letra_apareceu_mais_vezes = letra_atual
     
-    print(letra_atual)
+    print(letra_atual, qtd_atual)
     i += 1
 print('')
 print(
