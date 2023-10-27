@@ -43,6 +43,6 @@ lista3 = [1,2,3,4,5,6,7,8,9] # Definição da lista3
 
 lista2.extend(lista3) # retorna a união das duas listas com a lista inserida dentro do objeito aparecendo nos índices finais
 
-lista2.sort() # retorna com a organização dos objetos da lista em ordem crescente para números e 
+lista2.sort() # retorna com a organização dos objetos da lista em ordem crescente para números e ordem alfabética para strings
 
 print(lista2)
