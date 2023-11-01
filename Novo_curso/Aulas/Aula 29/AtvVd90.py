@@ -6,28 +6,28 @@ Não permita que o programa quebre com erros
 de íncidices inexistentes na lista.
 '''
 
-print('Vamos criar uma lista?')
+entrar = input('Vamos criar uma lista?(s/n): ')
 
-while True:
+lista_base = []
+
+while entrar == 's' :
     
-    lista_base = []
+    nova_lista = lista_base
 
     resp1 = input('Deseja ADICIONAR algo na lista?(s/n): ')
     
     if resp1 == 's':
 
-        lista1 = lista_base
-
         add = input('adicionar: ')
 
-        lista1.append(add)
+        nova_lista.append(add)
 
         print(f'{add} adicionado a lista com êxito')
 
         resp1 = input('Deseja ADICIONAR algo na lista?(s/n): ')
 
     else:    
-        print(lista1)
+        print(nova_lista)
         pass
 
 
@@ -35,7 +35,10 @@ while True:
 
     if resp2 == 's':
 
-        print(f'Essa é sua lista {lista1}')
+        print(f'Essa é sua lista {nova_lista}')
 
         # try:
         #     enumerate(lista1)
+
+else:
+    print('Sua lista não foi feita')
