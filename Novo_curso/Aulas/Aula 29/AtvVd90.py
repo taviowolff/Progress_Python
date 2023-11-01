@@ -31,14 +31,16 @@ while entrar == 's' :
         pass
 
 
-    resp2 = input('Deseja remover algo da lista?')
+    remover = input('Deseja remover algo da lista?')
 
-    if resp2 == 's':
+    if remover == 's':
 
         print(f'Essa é sua lista {nova_lista}')
 
         # try:
         #     enumerate(lista1)
+
+    entrar = input('Vamos criar uma lista?(s/n): ')
 
 else:
     print('Sua lista não foi feita')
