@@ -6,41 +6,41 @@ Não permita que o programa quebre com erros
 de íncidices inexistentes na lista.
 '''
 
-entrar = input('Vamos criar uma lista?(s/n): ')
+entrar = input('Deseja criar uma lista?(s/n): ')
 
-lista_base = []
+lista_base = ['cebola', 'alho', 'cloro']
 
 while entrar == 's' :
-    
-    nova_lista = lista_base
-
-    resp1 = input('Deseja ADICIONAR algo na lista?(s/n): ')
-    
-    if resp1 == 's':
-
+    adicionar = input('Deseja ADICIONAR algo na lista?(s/n): ')   
+  
+    while adicionar == 's':
         add = input('adicionar: ')
-
-        nova_lista.append(add)
-
+        lista_base.append(add)
         print(f'{add} adicionado a lista com êxito')
+        adicionar = input('Deseja ADICIONAR algo na lista?(s/n): ')
+    print(f'Sua lista foi criada\n{lista_base}')
 
-        resp1 = input('Deseja ADICIONAR algo na lista?(s/n): ')
+    remover = input(f'Deseja remover algo da lista?(s/n): ')
 
-    else:    
-        print(nova_lista)
-        pass
+    while remover == 's':
+        for item, indice in enumerate(lista_base):
+            print(item, indice)
+        try:
+            rmv = int(input('Escolha o número do item da lista que deseja remover: '))
+            lista_base.pop(rmv)       
+        except IndexError:
+            print('Erou, escolha um número que há na lista')
+            continue
+        except ValueError:
+            print('Erou, escolha apenas números na lista')
+            continue
 
+        remover = input('Deseja remover algo da lista?(s/n): ')
+    
+    print(f'Sua lista é essa\n{lista_base}')
+    entrar = input('Deseja adicionar algo mais?(s/n): ')
 
-    remover = input('Deseja remover algo da lista?')
-
-    if remover == 's':
-
-        print(f'Essa é sua lista {nova_lista}')
-
-        # try:
-        #     enumerate(lista1)
-
-    entrar = input('Vamos criar uma lista?(s/n): ')
-
+if len(lista_base) >= 0:
+    print(f'Sua lista é\n{lista_base}')
 else:
-    print('Sua lista não foi feita')
+    print('Operação finalizada com sucesso') 
