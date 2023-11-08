@@ -20,4 +20,4 @@ salas = [
 # print(*string)
 # print(*tupla)
 
-print(*salas, sep='\n')
+print(*tupla, sep='\n')
