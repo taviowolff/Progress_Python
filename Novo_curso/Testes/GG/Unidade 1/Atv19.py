@@ -10,4 +10,4 @@ lista_alunos = ['Jorge', 'Otávio', 'Danilo', 'Artur']
 
 aluno_escolhido = random.choice(lista_alunos)
 
-print(f'O professor escolheu {aluno_escolhido}')
+print(f'O professor escolheu o {aluno_escolhido}')
