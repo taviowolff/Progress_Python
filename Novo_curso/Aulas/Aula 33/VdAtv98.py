@@ -23,15 +23,26 @@ contrário disso:
 
 O primeiro dígito do CPF é 7
 """
+import math
+import os
+import time
 
 cpf = input('Escreva seu cpf: ')
-
 lista_num = list(cpf)
-
 contador = 10
+nova_lista = []
 
-while contador >= 2:
+while contador >= 3:
+    for num in lista_num:
+        num = int(num)
+        mult = contador * num
+        nova_lista.append(mult)
+        contador -= 1
 
-    
-    print(contador)
-    contador -= 1
+nova_lista.pop(-1)
+nova_lista.pop(-1)
+soma_da_lista = 0
+
+for elemento in nova_lista:
+    soma_da_lista += elemento
+print(soma_da_lista)
