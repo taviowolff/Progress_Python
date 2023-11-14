@@ -24,7 +24,7 @@ contrário disso:
 
 O segundo dígito do CPF é 0
 """
-cpf = "15494868028"
+cpf = "154948680"
 nove_digitos = cpf[:9]
 resultado_digito1 = 0
 contador_regressivo_1 = 10
@@ -36,8 +36,7 @@ digito_1 = ((resultado_digito1 * 10) % 11)
 digito_1 = digito_1 if digito_1 <= 9 else 0
 print(digito_1)
 
-
-dez_digitos = cpf[:10]
+dez_digitos = nove_digitos + str(digito_1)
 resultado_digito2 = 0
 contador_regressivo_2 = 11
 
