@@ -14,7 +14,7 @@ entrada_e_sequencial = cpf == cpf[0] * len(cpf) # confere se há sequência
 
 if entrada_e_sequencial:
     print('Você enviou dados sequenciais.')
-    sys.exit()
+    sys.exit() # quebra de código houver dados sequenciais
 
 nove_digitos = cpf_verificador[0:9]
 
