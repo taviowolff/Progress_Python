@@ -8,7 +8,7 @@ def soma(*args): # repare que esse *args é apenas para argumentos posionais
         total += numero # número somado com total e redefinição do total dentro do laço for
     return(f'Total = {total}')
 
-soma(1, 2, 3, 4, 5, 6) # essa chama não vai aparecer nada na tela devido o fato da função não ter print
+soma(1, 2, 3, 4, 5, 6) # essa chamada não vai aparecer nada na tela devido o fato da função não ter print
 
 soma_1_2_3 = soma(1,2,3) # chamada da função soma
 # print(soma_1_2_3)
