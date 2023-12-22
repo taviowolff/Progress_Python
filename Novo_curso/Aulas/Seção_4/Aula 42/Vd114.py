@@ -14,4 +14,6 @@ print(
     executa(saudacao, 'bom dia', 'Otávio')
 )
 
-print(executa(saudacao, 'boa noite', 'José'))
+print(
+    executa(saudacao, 'boa noite', 'José')
+)
