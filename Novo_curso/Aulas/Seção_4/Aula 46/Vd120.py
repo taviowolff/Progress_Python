@@ -22,7 +22,7 @@ for valor in pessoa:
 
 print(pessoa['nome'])
 
-pessoa.pop(['nome'])
+pessoa.pop('nome')
 
 print(pessoa)
 
