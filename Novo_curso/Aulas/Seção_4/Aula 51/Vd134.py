@@ -32,3 +32,5 @@ print(executa(lambda x, y: x * y, 3, 2))
 soma = (lambda x, y: x * y)
 
 print(soma(2,3))
+
+print(executa(lambda *args: sum(*args), 1,2,3,4))
