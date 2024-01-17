@@ -29,4 +29,13 @@ def mostro_argumentos_nomeados(*args, **kwargs):
     for chave, valor in kwargs.items():
         print(chave, valor)
 
-mostro_argumentos_nomeados(nome = 'Miguel', idade= 22)
+# mostro_argumentos_nomeados(nome = 'Miguel', idade= 22)
+
+configuracoes = {
+    'arg1':1,
+    'arg2':2,
+    'arg3':3,
+    'arg4':4
+}
+
+mostro_argumentos_nomeados(**configuracoes)
