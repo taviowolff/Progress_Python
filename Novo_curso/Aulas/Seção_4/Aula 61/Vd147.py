@@ -1,10 +1,19 @@
 def generator(n=0):
-    yield 3
+    yield 1 # Pausar
+    print('Continuando...')
+    yield 2 # Pausar
+    print('Mais um pause...')
+    yield 3 # Pausar
+    print('Vou terminar...')
+    return 'Acabou'
 
 
-gen = generator()
+gen = generator(n=0)
 
-# for gen in range(10):
-print(next(gen))
-print(next(gen))
-print(next(gen))
+for g in gen:
+    print(g)
+
+
+# print(next(gen))
+# print(next(gen))
+# print(next(gen))
