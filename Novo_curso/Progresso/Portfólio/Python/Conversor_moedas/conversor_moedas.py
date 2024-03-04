@@ -1,3 +1,5 @@
+"Conversor criado 2024/03/04"
+
 def converter_moeda(valor, taxa):
     return valor * taxa
 
