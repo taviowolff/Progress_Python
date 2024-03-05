@@ -1,4 +1,5 @@
-"Lista de tarefas criada em 2024/03/04"
+""" Lista de tarefas criada em 2024/03/04
+    Atualizado dia 2024/03/05               """
 
 import os
 from time import sleep
@@ -60,14 +61,14 @@ while True:
 
         else:
             print('Escolheu número errado')
-    else:
-        criar_lista = input('Deseja retornar a lista? s/n: ')
+    # else:
+    #     criar_lista = input('Deseja retornar a lista? s/n: ')
       
-        if criar_lista == 's':
-            pass  
-        else:
-            print('Você não criou a lista')
-            sleep(2)
-            os.system('cls')
-            break
+    #     if criar_lista == 's':
+    #         pass  
+    #     else:
+    #         print('Você não criou a lista')
+    #         sleep(2)
+    #         os.system('cls')
+    #         break
         
