@@ -28,13 +28,27 @@ while True:
         elif escolha == '3':
             for indice, tarefa in enumerate(tarefas):
                 print(f'{indice}:{tarefa}')    
-            deletar = int(input('Escolha o índice para deletar: '))
-            try:
-                del tarefas[deletar]
-            except IndexError:
-                print('Não tem esse índice na lista')
-            except ValueError:
-                print('Escolha um número como índice')
+           
+            deletar = input('Escolha o índice para deletar: ')
+            if deletar.isdigit():
+                num = int(deletar)
+                try:
+                    del tarefas[num]
+
+                except IndexError:
+                    print('índice inválido')
+            else:
+                print('Escolha um número')
+
+            # try:
+            #     del tarefas[index]
+            # except IndexError:
+            #     print('Não tem esse índice na lista')
+            # except ValueError:
+            #     # if index.isalpha():
+            #     print('Escolha um número como índice')
+            #     # else:
+            #     #     continue
             sleep(2)
             os.system('cls')
 
@@ -49,8 +63,8 @@ while True:
     else:
         criar_lista = input('Deseja retornar a lista? s/n: ')
       
-        if escolha == 's':
-            continue   
+        if criar_lista == 's':
+            pass  
         else:
             print('Você não criou a lista')
             sleep(2)
