@@ -11,4 +11,4 @@ while True:
     despesas.append(valor)
 
 total_despesas = calcular_despesas(despesas)
-print(f'O valor total das despesas foi de R${total_despesas}')
+print(f'O valor total das despesas foi de R${total_despesas:.2f}')
