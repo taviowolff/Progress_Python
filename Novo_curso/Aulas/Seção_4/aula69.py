@@ -1,5 +1,9 @@
-from Aula_69_package import Vd157m
+import Aula_69_package
 
-x = Vd157m.soma(3,3)
+print(Aula_69_package.dobra(2))
 
-print(x)
+# from Aula_69_package import Vd157m
+
+# x = Vd157m.soma(3,3)
+
+# print(x)
