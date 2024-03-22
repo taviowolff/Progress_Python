@@ -11,36 +11,26 @@ from dados import produtos
 # Ordene os produtos por preco crescene (do menor para maior)
 # Gere produtos_ordenados_por_preco por deep copy (cópia profunda)
 
-
-# novos_produtos = copy.deepcopy(produtos) # criação da shallow copy
-# novos_produtos = produtos.copy()
-# print(novos_produtos,type(novos_produtos))
-
-# for produto in novos_produtos:
-#     preco = produto['preco']
-#     conta = preco * 1.10
-#     # produto['preco'].append(conta) Sei lá oque eu tentei aqui
-#     print(f'{conta:.2f}')
-
 novos_produtos = [
     {**p, 'preco': round(p['preco'] * 1.1, 2)} 
     for p in copy.deepcopy(produtos)
     ]
 
-# print(*produtos, sep='\n')
-# print()
-# print(*novos_produtos, sep='\n')
-
-
 produtos_ordenados_por_nome = sorted(
-    produtos,
-    key=lambda p: p['nome']
+    copy.deepcopy(produtos),
+    key=lambda p: p['nome'],
+    reverse= True
 )
 
-
+produtos_ordenados_por_preco = sorted(
+    copy.deepcopy(produtos),
+    key=lambda p: p['preco']
+)
 print(*produtos, sep='\n')
 print()
+print(*novos_produtos, sep='\n')
+print()
 print(*produtos_ordenados_por_nome, sep='\n')
-
-
+print()
+print(*produtos_ordenados_por_preco, sep='\n')
 
