@@ -1,0 +1,34 @@
+Nessa o professor ensinou a maneira de se criar uma arquivo
+
+Dando como exemplo básico a criação de um arquivo .txt
+----
+    1. Devemos especificar o caminho para a criação do arquivo 
+    obs: caso esteja no windows se atende com o caminho 
+    caminho_arquivo = 'C:\\Users\\otavi\\OneDrive\\Documentos\\GitHub\\Progress_Python\\Novo_curso\\Aulas\\Seção_4\\Aula_83\\'
+    Escrito com essas \\ duas barras invertidas.
+
+    2. Para adicionar o arquivo novo ao caminho já existente
+    concatene o nome do arquivo novo mais o tipo
+    caminho_arquivo += 'aula83teste.txt'
+
+    3. Verifique se o arquivo foi adicionado ao caminho do arquivo novo usando 
+    print(caminho_arquivo)
+    C:\Users\otavi\OneDrive\Documentos\GitHub\Progress_Python\Novo_curso\Aulas\Seção_4\Aula_83\aula83teste.txt
+----
+
+O professor ainda mostrou como é a forma correta de se abrir e fechar um arquivo.
+----
+Obs: o ideal dos códigos de criação de arquivo é sempre fechar após abertos, então.
+   
+    arquivo = open(caminho_arquivo, 'w')
+    arquivo.close() # Sempre que abrir um arquivo feche-o
+    
+- Nesse código é mostrado o início ao fim do processo de criação do arquivo 
+
+- No código abaixo o professor demonstra de maneira simplificada por consistir 
+  em um arquivo Context manager ele pode ser aberto e fechado com apenas.
+
+    with open(caminho_arquivo, 'w') as arquivo:
+
+- com o with o arquivo é orientado a se fechar assim que fecha o laço.
+----
