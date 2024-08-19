@@ -1,0 +1,28 @@
+Nessa aula o professor mostrou a função de escrita e leitura na criação de arquivo em Python
+
+1. Utilizando a função w (write)
+----
+    - 'w': Abre o arquivo para escrita. Cria o arquivo se ele não existir e 
+    sobrescreve todo o conteúdo se ele já existir.
+
+    'w+': Abre o arquivo para leitura e escrita. Cria o arquivo se ele não 
+    existir e sobrescreve todo o conteúdo se ele já existir.
+    
+    ex:
+    with open(caminho_arquivo, 'w+') as arquivo:
+        arquivo.write('Linha 1\n') # escreve apenas uma linha de texto recomendado utilizar quebra de linhas
+
+        arquivo.writelines(('Linha 3\n','Linha 4\n')) 
+        # escreve mais de uma linha de texto
+        possibilitando recomendado utilizar quebra de linhas
+
+    - 'w+' também te permite usar comando de leitura.
+
+    ex:
+    with open(caminho_arquivo, 'w+') as arquivo:
+        arquivo.write('Linha 1\n')
+        print(arquivo.read())
+
+    # caso o comando seja apenas 'w' retorna um erro
+        
+----
