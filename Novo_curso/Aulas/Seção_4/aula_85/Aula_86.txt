@@ -1,0 +1,23 @@
+Modos de abertura de arquivo e encoding com with open
+
+
+1. a abertura de arquivo com 'a':
+----
+    O modo 'a' permite que você abra o arquivo já existente
+    escreve o nele e não apague o que já existe
+    diferente do modo 'w' ou 'w+'
+    que cria um arquivo novo desde o início
+
+    O uso do modo 'a' é bem recomendado para arquivar logs
+
+    ex: 
+    with open(caminho_arquivo, 'a', encoding='UTF8') as arquivo:
+        arquivo.write('Atenção\n') 
+
+
+----
+
+modo w
+
+
+econding de digitação
