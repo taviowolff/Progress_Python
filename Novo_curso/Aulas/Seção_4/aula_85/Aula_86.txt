@@ -17,7 +17,13 @@ Modos de abertura de arquivo e encoding com with open
 
 ----
 
-modo w
-
-
 econding de digitação
+2. Ecoding - forma como o código interpretará o que está sendo escrito.
+----
+    Define dentro da linha do modo 'a' qual será o econding do arquivo
+
+    with open(caminho_arquivo, 'a', encoding='UTF8') as arquivo:
+        arquivo.write('Atenção\n')
+    # recomendado utilizar UTF8
+
+----
