@@ -1,6 +1,6 @@
-Nessa aula o professor mostrou a função de escrita e leitura na criação de arquivo em Python
+Nessa aula o professor mostrou a modo de escrita e leitura na criação de arquivo em Python
 
-1. Utilizando a função w (write)
+1. Utilizando a modo w (write)
 ----
     - 'w': Abre o arquivo para escrita. Cria o arquivo se ele não existir e 
     sobrescreve todo o conteúdo se ele já existir.
@@ -10,19 +10,37 @@ Nessa aula o professor mostrou a função de escrita e leitura na criação de a
     
     ex:
     with open(caminho_arquivo, 'w+') as arquivo:
-        arquivo.write('Linha 1\n') # escreve apenas uma linha de texto recomendado utilizar quebra de linhas
+        arquivo.write('Linha 1\n') 
+        # escreve apenas uma linha de texto recomendado quebra de linhas
 
         arquivo.writelines(('Linha 3\n','Linha 4\n')) 
-        # escreve mais de uma linha de texto
-        possibilitando recomendado utilizar quebra de linhas
+        # escreve mais de uma linha de texto recomendado quebra de linhas
 
-    - 'w+' também te permite usar comando de leitura.
+    - 'w+' também te permitirá usar comando de leitura.
 
     ex:
     with open(caminho_arquivo, 'w+') as arquivo:
         arquivo.write('Linha 1\n')
+        arquivo.seek(0) 
         print(arquivo.read())
 
     # caso o comando seja apenas 'w' retorna um erro
-        
+    
+    - Para que o arquivo seja lido corretamente utilizando o 'w+'
+        você deve retornar o cursor do python dentro do arquivo
+        por isso se utiliza:
+
+        arquivo.seek(0) # faz com que o cursos volte ao início do arquivo.
+----
+
+2. utilizando modo 'r' (read)
+----
+    ex:
+
+    with open(caminho_arquivo, 'r') as arquivo:
+    print(arquivo.read())
+
+    # esse código garante que todo o arquivo seja lido.
+
+
 ----

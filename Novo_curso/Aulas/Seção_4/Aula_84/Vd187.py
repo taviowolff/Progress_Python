@@ -29,5 +29,12 @@ with open(caminho_arquivo, 'w+') as arquivo:
     #     print(linha.strip()) 
         # a função print já vem com um pular linha, usa-se strip para remover isso
 
+# with open(caminho_arquivo, 'r') as arquivo:
+#     print(arquivo.read())
+
 with open(caminho_arquivo, 'r') as arquivo:
-    print(arquivo.read())
+    print(arquivo.readline())
+    print(arquivo.readline())
+    print(arquivo.readline())
+    print(arquivo.readline())
+    
