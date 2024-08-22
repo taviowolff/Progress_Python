@@ -1,1 +1,26 @@
-os. removem, os.unlink e os.rename
+os.remove, os.unlink e os.rename
+
+1. os.remove e os.unlink
+----
+Esses dois comando são responsáveis por remover um arquivo utilizando a biblioteca integrada os
+
+ex: 
+    os.remove(caminho_arquivo)
+    os.unlink(caminho_arquivo)
+
+* o arquivo precisa necessariamente existir pois se não ocorre um erro
+    FileNotFoundError: [WinError 2] O sistema não pode encontrar o arquivo especificado:
+----
+
+2. os.rename
+----
+Esse comando faz com que o arquivo seja renomeado 
+ex:
+    os.rename(caminho_arquivo, 'arquivo86.txt')
+* Esse comando fará você realocar esse arquivo em outra pasta
+
+* Para que o arquivo se mantenha na mesma pasta, utilize:
+    novo_nome_arquivo = os.path.join(os.path.dirname(caminho_arquivo), 'arquivo86.txt')
+    os.rename(caminho_arquivo, novo_nome_arquivo)
+
+----

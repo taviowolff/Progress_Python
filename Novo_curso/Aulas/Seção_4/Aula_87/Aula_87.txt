@@ -1,0 +1,25 @@
+O que é JSON? (exemplos com Python e JavaScript)
+
+1. Vídeo de explicação no youtube
+----
+
+1.JSON é Java Script Object Notation
+    * é basicamente um arquivo simples de dados
+
+    - Dados que vão em um JSON
+    INT - FLOAT
+    STRING
+    BOLL 
+    NULL 
+    [] ARRAY
+    {} OBJETO (objetos que assumem valores)
+
+
+2.JSON pode assumir de 1 até os 6 valores
+
+    *e podem ter OBJETOS dentro de ARRAY
+    ex1:
+        [{"name" : "Otávio", "LastName" : "Buffon"}]
+
+    ex2:
+----
