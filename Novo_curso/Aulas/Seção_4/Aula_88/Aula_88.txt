@@ -1,0 +1,59 @@
+Problema dos parâmetros mutáveis em funções Python
+
+O professor apresenta um problema referente a usar parâmetros mutáveis em funções:
+
+----
+1. O problema apresentado é o fator acumulativo no objeto mutável 
+
+o exemplo que o professor deu de uma lista dentro de uma função 
+pode ocasionar que ao chamar essa função novamente em outra parte
+do código para receber um valor, pode acumular com o valor do anterior.
+    
+    def adiciona_clientes(nome, lista = []):
+        lista.append(nome)
+        return lista
+
+cliente1 = adiciona_clientes('Luiz')
+adiciona_clientes('Joana', cliente1)
+print(cliente1)
+
+output: ['Luiz', 'Joana']
+
+cliente2 = adiciona_clientes('Helena')
+adiciona_clientes('Maria', cliente2)
+print(cliente2)
+
+output: ['Luiz', 'Joana', 'Helena', 'Maria']
+
+Nesse exemplo o cliente2 que recebe a função mais o objeto a ser implementado
+acaba acumlando os valores da lista do cliente1.
+----
+
+----
+2. Para contornar os erros desse tipo de função o professor recomenda esse tipo: 
+def adiciona_clientes(nome, lista = None):
+    if lista is None: 
+        lista = []
+    lista.append(nome)
+    return lista
+
+lista1 = []
+cliente1 = adiciona_clientes('Luiz', lista1)
+adiciona_clientes('Joana', cliente1)
+print(cliente1)
+
+['Luiz', 'Joana']
+
+cliente2 = adiciona_clientes('Helena')
+adiciona_clientes('Maria', cliente2)
+print(cliente2)
+
+['Helena', 'Maria']
+
+cliente3 = adiciona_clientes('Coraline')
+adiciona_clientes('Bernardo', cliente3)
+cliente3.append('Daisy')
+print(cliente3)
+
+['Coraline', 'Bernardo', 'Daisy']
+----
