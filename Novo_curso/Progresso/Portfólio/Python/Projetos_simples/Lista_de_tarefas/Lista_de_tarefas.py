@@ -10,7 +10,7 @@ while True:
     criar_lista = input('Deseja criar uma lista? s/n: ')
 
     while criar_lista == 's':
-        escolha = input('Deseja [1]adicionar, [2]mostrar, [3]deletar, [4]finalizar da lista? ')
+        escolha = input('Deseja [1]adicionar, [2]mostrar, [3]deletar, [4]finalizar a lista? ')
         
         if escolha == '1':
             os.system('cls')

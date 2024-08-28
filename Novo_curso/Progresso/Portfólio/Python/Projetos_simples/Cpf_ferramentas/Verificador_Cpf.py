@@ -8,7 +8,7 @@ cpf_verificador = re.sub(
     r'[^0-9]',
     '',
     cpf
-) # essa linha de código faz com que qualquer coisa que não sejam número entre 0 a 9 seja trocados por espaço vazio
+) # essa linha de código faz com que qualquer coisa que não sejam número de 0 a 9 seja trocado por espaço vazio
 
 entrada_e_sequencial = cpf == cpf[0] * len(cpf) # confere se há sequência
 
