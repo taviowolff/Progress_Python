@@ -10,7 +10,6 @@ import os
 # refazer = todo ['fazer café','caminhar']
 
 def limpar_tela():
-    # Comando para limpar a tela do terminal
     os.system('cls' if os.name == 'nt' else 'clear')
 
 def adicionar_tarefa(tarefa, tarefas):
@@ -18,12 +17,12 @@ def adicionar_tarefa(tarefa, tarefas):
     print(f"A tarefa {tarefa} adionada")
 
 def apagar_tarefa(tarefas, indice):
-    if 0 <= indice <= len(tarefas):
-        tarefa = tarefas.pop(indice)
-        print(f"Tarefa '{tarefa}' removida.")
-
-    else:
+    if not 0 <= indice <= len(tarefas):
         print(f'índice inválido. Nada apagado.')
+
+    tarefa = tarefas.pop(indice)
+    print(f"Tarefa '{tarefa}' removida.")
+
 
 def desfazer_acao(tarefas, historico):
     if historico:
@@ -38,16 +37,17 @@ def desfazer_acao(tarefas, historico):
             print('Nada desfeito.')
 
 def mostrar_tarefas(tarefas):
-    if tarefas:
-        print("Lista de Tarefas:")
-        for i, tarefa in enumerate(tarefas):
-            print(f"{i}. {tarefa}")
-    else:
+    if not tarefas:
         print("A lista de tarefas está vazia.")
+    
+    print("Lista de Tarefas:")
+    for i, tarefa in enumerate(tarefas):
+        print(f"{i}. {tarefa}")
 
 def main():
     tarefas = []
     historico = []
+
 
     while True:
         limpar_tela()
@@ -61,8 +61,19 @@ def main():
         print("5 - Sair e Salvar")
 
         comando = input("\nEscolha um comando: ")
-        
-            
+ 
+# Código quebrado       
+    #     comandos = {
+    #         '1' : lambda: adicionar_tarefa(tarefas, adicionar_tarefa),
+    #         '2' : lambda: apagar_tarefa(tarefas, apagar_tarefa),
+    #         '3' : lambda: desfazer_acao(tarefas, desfazer_acao),
+    #         '4' : lambda: os.system('cls' if os.name == 'nt' else 'clear'),
+    #         '5' : lambda: exit(),
+    #     }
+
+    #     executar = comandos.get(comando, comandos[comando])
+    #     executar()
+
         if comando == '1':
             tarefa = input("Digite a tarefa: ")
             adicionar_tarefa(tarefas, tarefa)

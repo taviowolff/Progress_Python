@@ -1,0 +1,40 @@
+Evitando Uso de condicionais + Guard Clause
+
+O uso de condicionais deixa o seu código muito mais complexo e demorado para 
+interpretações tanto da máquina quando de programadores que possam lê-lo.
+
+Então a dica número 1 que o professor indica é 
+Se há a possibilidade de evitar o uso de IFs ELIFs ELSE no seu código 
+evite
+
+Guard Clause
+
+São aquelas condições que preparam o terreno para a real execução do código filtrando o que fará e principalmente se pode fazer.
+
+São condições que o algoritmo precisa assegurar antes de executar a ação que ele está preparado para fazer.
+
+Algumas pessoas conhecem esse padrão como pré-condição e de fato é muito usado como contratos de uma função.
+
+Pode ser desde uma validação básica de um argumento recebido para avaliar se é do tipo esperado, se não é nulo, se está dentro
+de uma determinada faixa, ou se algum dado está em determinado estado, mesmo que não seja sobre os argumentos da função (ainda 
+que isto seria feito no objeto que foi recebido implicitamente por um método). E pode ser uma validação de regra de negócio como
+determinar se tem saldo suficiente para realizar aquilo (um saque por exemplo).
+
+# This function has no guard clause
+def f_noguard(x):
+    if isinstance(x, int):
+        #code
+        #code
+        #code
+        return x + 1
+    else:
+        return None
+
+# Equivalent function with a guard clause. Note that most of the code is less indented, which is good
+def f_guard(x):
+    if not isinstance(x, int):
+        return None
+    #code
+    #code
+    #code
+    return x + 1
