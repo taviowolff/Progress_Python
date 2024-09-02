@@ -6,6 +6,6 @@ Docstring -  Através de docstrings, Python nos permite documentar
 o código de forma clara e de fácil manutenção.
 """
 # permite escrever um comentário
-print('sexo ') #foda man
+print('Aula') # Demais
 # doido
 print(123)

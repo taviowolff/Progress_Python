@@ -1,4 +1,5 @@
 import time
+import os
 
 while True:
   # Obtém a hora atual em formato de tupla (hora, minuto, segundo)
@@ -8,4 +9,7 @@ while True:
   # Imprime a hora atual
   print(current_time_str)
   # Espera 1 segundo antes de atualizar novamente
+
   time.sleep(1)
+
+  os.system('cls')

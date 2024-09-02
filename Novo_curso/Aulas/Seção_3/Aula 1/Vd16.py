@@ -1,4 +1,4 @@
 # permite escrever um comentário
-print('sexo ') #foda man
+print('Aula') # Demais
 # doido
 print(123)
