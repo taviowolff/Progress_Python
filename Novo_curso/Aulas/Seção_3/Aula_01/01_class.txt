@@ -1,0 +1,17 @@
+Em Python, uma classe é uma forma de criar um tipo de dado customizado 
+que define as características e comportamentos (ou métodos) de objetos.
+
+----
+Classes em Python:
+Instâncias: Cada vez que você cria um objeto a partir de uma classe, 
+você está criando uma instância dessa classe. No seu exemplo, p1 e p2 
+são instâncias diferentes da classe Pessoa.
+
+Atributos: Os atributos são variáveis que você pode associar a instâncias 
+de uma classe. Eles podem ser dinâmicos (como no seu exemplo) ou definidos 
+dentro da própria classe.
+
+Para criar uma estrutura mais organizada, pode incluir um método 
+construtor __init__ dentro da classe para inicializar automaticamente os 
+atributos quando um objeto for criado.
+----
