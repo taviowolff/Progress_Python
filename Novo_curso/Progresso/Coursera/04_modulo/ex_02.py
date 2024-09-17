@@ -6,7 +6,7 @@ with open(fname, 'r') as arquivo:
     for line in arquivo:
         # Dividir cada linha em uma lista de palavras
         words = line.split()
-        
+        print(words)
         # Iterar sobre as palavras e verificar se já estão na lista
         for word in words:
             if word not in words_list:
@@ -16,7 +16,7 @@ with open(fname, 'r') as arquivo:
 words_list.sort()
 
 # Imprimindo o resultado
-print(words_list)
+# print(words_list)
 
 
         

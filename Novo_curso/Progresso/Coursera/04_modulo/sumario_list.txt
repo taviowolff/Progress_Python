@@ -1,0 +1,19 @@
+Conceito de uma coleção
+
+Listas e loops definidos
+
+Indexação e consulta
+
+Mutabilidade de listas
+
+Funções: len, min, max, sum
+
+Fatiamento de listas
+
+Métodos de lista: append, remove
+
+Ordenação de listas
+
+Dividindo strings em listas de palavras
+
+Usando split para analisar strings
