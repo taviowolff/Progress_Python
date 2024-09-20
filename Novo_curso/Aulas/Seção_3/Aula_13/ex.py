@@ -20,9 +20,14 @@ class Cachorro:
     def altura(self, valor):
         self._idade = valor
 
+    @property
     def sexo(self):
-        sexo = input('Qual seu sexo? ')
-        return sexo
+        return self._sexo
+
+    @sexo.setter
+    def sexo(self, valor):
+        self._sexo = valor
+
 
 
 c1 = Cachorro('Arnaldo')
@@ -32,4 +37,5 @@ print(c1.idade)
 c1.altura = 1.71
 print(c1.altura)
 
-print(Cachorro.sexo)
+c1.sexo = 'm'
+print(c1.sexo)
