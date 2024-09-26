@@ -1,0 +1,9 @@
+Tuplas são que nem listas mas que não podem ser alteradas
+
+Tuplas podem ser acessadas pelos seus indices que nem as listas,
+mas elas nao podem sofrer alteracoes em seus valores, retornando
+um TypeError
+
+Tuplas sao melhores que listas em questao de efeciencia e performace
+em uso de memoria. Entao escolhe-se usar tuplas para se fazer
+variaveis temporarias ao programar.
