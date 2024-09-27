@@ -30,4 +30,41 @@
 
 # Using sorted()
 
-# Sort by Values instead of kry
+# Sort by Values instead of key
+
+# c = {'a':10, 'b':1,'c':22}
+
+# tmp = list()
+# for k,v in c.items():
+#     tmp.append((v,k))
+# print(tmp)
+
+# tmp = sorted(tmp, reverse=True)
+# print(tmp)
+
+# exercicio
+
+caminho = ('#caminhoarquivo')
+counts = dict()
+
+with open(caminho, 'r', encoding='utf-8') as arquivo:
+    for line in arquivo:
+        words = line.split()
+        for word in words:
+            counts[word] = counts.get(word,0) + 1
+
+lst = list()
+for key, val in counts.items():
+    newtup = (val, key)
+    lst.append(newtup)
+
+lst = sorted(lst, reverse=True)
+
+for val, key in lst[:10]:
+    print(key,val)
+
+# Even shorter Version
+
+# c = {'a':10,'b':1,'c':22}
+
+# print(sorted([(v,k) for k,v in c.items()])) #list comprehension
