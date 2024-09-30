@@ -4,7 +4,6 @@ lista = list()
 counts = dict()
 hora = list()
 
-
 with open(caminho, 'r', encoding='utf-8') as arquivo:
     for linhas in arquivo:
         if 'From ' in linhas:
