@@ -35,3 +35,5 @@ cliente1 = Cliente('Otávio')
 cliente1.inserir_endereco('Chapot', 513)
 cliente1.inserir_endereco('Saturnino', 633)
 cliente1.listar_enderecos()
+
+print('ENCERROU O PROGRAMA')
