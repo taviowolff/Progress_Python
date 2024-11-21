@@ -13,17 +13,17 @@
 
 ## 2 Importando da biblioteca Array
 
-# import array
+import array
 
-# # Criação de um array de inteiros
+# Criação de um array de inteiros
 
-# arr = array.array('i',[1,2,3,4,5])
-# # print(arr)
+arr = array.array('i',[1,2,3,4,5])
+# print(arr)
 
-# for i in arr:
-#     print(i)
-# print()
-# print(arr[2])
+for i in arr:
+    print(i)
+print()
+print(arr[2])
 
 
 ## Arrays com Numpy
