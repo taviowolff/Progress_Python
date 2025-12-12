@@ -42,3 +42,18 @@ pessoa = {"nome": "Otávio",
 print(type(pessoa))
 # forma para consultar o valor de dados de um dicionário
 print(pessoa["nome"])
+
+# --- AULA SOBRE PRINT ---
+
+# 1. Usando separador (sep)
+# Útil para formatar datas ou listas sem espaços padrão
+print("12", "12", "2025", sep="/")
+
+# 2. Usando end (fim de linha)
+# Útil para manter o texto na mesma linha
+print("Carregando", end="... ")
+print("Concluído!")
+
+# 3. f-strings (Interpolação de strings)
+# A forma mais moderna de inserir variáveis no texto
+print(f"O {pessoa['nome']} tem {pessoa['idadde']} anos.")
