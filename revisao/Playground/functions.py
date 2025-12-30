@@ -57,3 +57,32 @@ print(contador) # Saída: 2
 adicionar_dez = lambda a: a + 10
 
 print(adicionar_dez(5)) # Saída: 15
+
+def espacamento(texto, num_espacos):
+    return (" " * (num_espacos - len(texto))) + texto
+
+
+print(espacamento("Olá, Mundo!", 20))
+print(espacamento("Vamos", 20))
+print(espacamento("Progamar", 20))
+
+
+def triangle (base, altura):
+    for base in range (1, altura +1):
+        print("*" * base + " " * (altura - base))
+
+
+triangle(10, 10)
+
+def triangle (letra, base):
+    for i in range (1, base +1):
+        print(letra * i)
+
+  
+triangle("l", 10)
+
+def retangulo (letra, largura, altura):
+    for i in range (1, altura +1):
+        print(letra * largura)
+
+retangulo ("#", 10, 5)
