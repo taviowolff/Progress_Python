@@ -7,6 +7,7 @@ t = turtle.Turtle()
 
 # Agora usamos o 't' para dar comandos
 # t.forward(100)
+t.forward(59900)
 
 # t.left(90)
 
@@ -26,4 +27,5 @@ sleep(2)
 t.goto(0, 0)  # Volta para o ponto inicial (0, 0)
 sleep(2)
 # Importante: mantém a janela aberta
+turtle.done()
 turtle.done()
