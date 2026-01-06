@@ -1,3 +1,4 @@
+@ -1,28 +1,10 @@
 import turtle
 from time import sleep
 
